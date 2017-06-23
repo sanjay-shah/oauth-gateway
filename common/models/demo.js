@@ -2,7 +2,7 @@ var request = require('request');
 
 var client_id = '1986438338253957';
 var client_secret = '8ed343daa0814218b145b0fb954db249';
-var redirect_uri = 'http://localhost:3000/api/Demos/get_accesstoken';
+var redirect_uri = 'http://107.170.193.26:3000/api/Demos/get_accesstoken';
 
 module.exports = function(Demo) {
   Demo.authcode_callback = function(code, cb) {
