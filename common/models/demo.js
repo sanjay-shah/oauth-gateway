@@ -22,6 +22,7 @@ module.exports = function(Demo) {
     	}
   	}, function (error, response, body) {
 			  body_object = JSON.parse(body);
+			  body_object.code = code;
 			  cb(null, body_object);
 		});
   };
