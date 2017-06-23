@@ -1,0 +1,40 @@
+{
+  "name": "Demo",
+  "base": "Model",
+  "properties": {},
+  "methods": {
+    "authcode_callback": {
+      "isStatic": true,
+      "accepts": [{
+        "arg": "code",
+        "type": "string",
+        "http": {
+          "source": "query"
+        }
+      }],
+      "returns": {
+        "arg": "code",
+        "type": "string"
+      },
+      "http": {
+        "verb": "get"
+      }
+    },
+    "get_accesstoken": {
+      "isStatic": true,
+      "accepts": [{
+        "arg": "code",
+        "type": "string",
+        "http": {
+          "source": "query"
+        }
+      }],
+      "returns": {
+        "root": "true"
+      },
+      "http": {
+        "verb": "get"
+      }
+    }
+  }
+}
